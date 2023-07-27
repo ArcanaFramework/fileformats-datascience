@@ -12,7 +12,7 @@ FileFormats Datascience
     :alt: Documentation Status
 
 This is the "datascience" extension module for the
-[fileformats](https://github.com/ArcanaFramework/fileformats-core) package
+`fileformats <https://github.com/ArcanaFramework/fileformats-core>`__ package
 
 
 Quick Installation
