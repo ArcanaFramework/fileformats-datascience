@@ -9,3 +9,7 @@ from .data import (
 from .scripts import (
     RFile
 )
+from .object_serialization import (
+    Pickle,
+    Pickle__Gzip,
+)
