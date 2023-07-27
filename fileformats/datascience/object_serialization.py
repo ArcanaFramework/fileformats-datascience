@@ -18,3 +18,4 @@ class Pickle__Gzip(Gzip[Pickle]):
     """Python pickle file that has been gzipped"""
     ext = "pkl.gz"
     alternate_exts = (".pklz",)
+    iana_mime = "application/x-pickle+gzip"
