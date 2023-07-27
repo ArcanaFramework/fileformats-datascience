@@ -42,3 +42,10 @@ class Hdf5(WithMagicNumber, Data):
     binary = True
     ext = ".h5"
     magic_number = "894844460d0a1a0a"
+
+
+class VtkDataFile(WithMagicNumber, Data):
+
+    binary = True
+    ext = ".vtk"
+    magic_number = b"#vtk DataFile Version"
