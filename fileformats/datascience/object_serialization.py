@@ -5,6 +5,7 @@ from fileformats.archive import Gzip
 
 class ObjectSerialisation(File):
     iana_mime = None
+    binary = True
 
 
 class Pickle(WithMagicNumber, ObjectSerialisation):

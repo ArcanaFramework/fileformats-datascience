@@ -4,6 +4,7 @@ from fileformats.generic import File
 
 class Data(File):
     iana_mime = None
+    binary = True
 
 
 class TextMatrix(Data):
@@ -15,7 +16,7 @@ class RData(WithMagicNumber, Data):
     """Data-file created by the R statistical package"""
     ext = ".rData"
     binary = True
-    magic_number = b"RDA1"
+    magic_number = "1f8b0800"
 
 
 class MatFile(WithMagicNumber, Data):
@@ -40,4 +41,4 @@ class Hdf5(WithMagicNumber, Data):
 
     binary = True
     ext = ".h5"
-    magic_number = "894844460d0a1a0a01"
+    magic_number = "894844460d0a1a0a"
