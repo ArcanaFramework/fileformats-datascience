@@ -1,17 +1,17 @@
-FileFormats Extension - need2change
-====================================
-.. image:: https://github.com/arcanaframework/fileformats-need2change/actions/workflows/tests.yml/badge.svg
-    :target: https://github.com/arcanaframework/fileformats-need2change/actions/workflows/tests.yml
-.. image:: https://codecov.io/gh/arcanaframework/fileformats-need2change/branch/main/graph/badge.svg?token=UIS0OGPST7
-    :target: https://codecov.io/gh/arcanaframework/fileformats-need2change
-.. image:: https://img.shields.io/github/stars/ArcanaFramework/fileformats-need2change.svg
+FileFormats Datascience
+=======================
+.. image:: https://github.com/arcanaframework/fileformats-datascience/actions/workflows/tests.yml/badge.svg
+    :target: https://github.com/arcanaframework/fileformats-datascience/actions/workflows/tests.yml
+.. image:: https://codecov.io/gh/arcanaframework/fileformats-datascience/branch/main/graph/badge.svg?token=UIS0OGPST7
+    :target: https://codecov.io/gh/arcanaframework/fileformats-datascience
+.. image:: https://img.shields.io/github/stars/ArcanaFramework/fileformats-datascience.svg
     :alt: GitHub stars
-    :target: https://github.com/ArcanaFramework/fileformats-need2change
+    :target: https://github.com/ArcanaFramework/fileformats-datascience
 .. image:: https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat
     :target: https://arcanaframework.github.io/fileformats/
     :alt: Documentation Status
 
-This is the "need2change" extension module for the
+This is the "datascience" extension module for the
 [fileformats](https://github.com/ArcanaFramework/fileformats-core) package
 
 
@@ -20,7 +20,7 @@ Quick Installation
 
 This extension can be installed for Python 3 using *pip*::
 
-    $ pip3 install fileformats-need2change
+    $ pip3 install fileformats-datascience
 
 This will install the core package and any other dependencies
 
