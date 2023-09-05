@@ -1,6 +1,6 @@
 from fileformats.generic import File
 from fileformats.core.mixin import WithMagicNumber
-from fileformats.archive import Gzip
+from fileformats.application import Gzip
 
 
 class ObjectSerialisation(File):
