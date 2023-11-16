@@ -1,12 +1,15 @@
 FileFormats Datascience
 =======================
-.. image:: https://github.com/arcanaframework/fileformats-datascience/actions/workflows/tests.yml/badge.svg
-    :target: https://github.com/arcanaframework/fileformats-datascience/actions/workflows/tests.yml
+.. image:: https://github.com/arcanaframework/fileformats-datascience/actions/workflows/ci-cd.yml/badge.svg
+    :target: https://github.com/arcanaframework/fileformats-datascience/actions/workflows/ci-cd.yml
 .. image:: https://codecov.io/gh/arcanaframework/fileformats-datascience/branch/main/graph/badge.svg?token=UIS0OGPST7
     :target: https://codecov.io/gh/arcanaframework/fileformats-datascience
-.. image:: https://img.shields.io/github/stars/ArcanaFramework/fileformats-datascience.svg
-    :alt: GitHub stars
-    :target: https://github.com/ArcanaFramework/fileformats-datascience
+.. image:: https://img.shields.io/pypi/pyversions/fileformats-datascience.svg
+   :target: https://pypi.python.org/pypi/fileformats-datascience/
+   :alt: Supported Python versions
+.. image:: https://img.shields.io/pypi/v/fileformats-datascience.svg
+   :target: https://pypi.python.org/pypi/fileformats-datascience/
+   :alt: Latest Version
 .. image:: https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat
     :target: https://arcanaframework.github.io/fileformats/
     :alt: Documentation Status
