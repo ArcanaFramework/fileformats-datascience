@@ -7,6 +7,16 @@ class Data(File):
     binary = True
 
 
+class TextVector(Data):
+    """space-delimited text file containing a single vector of values"""
+    binary = False
+
+
+class TextArray(Data):
+    """space-delimited text file containing a 2-d array of values"""
+    binary = False
+
+
 class TextMatrix(Data):
     ext = ".mat"
     binary = False
