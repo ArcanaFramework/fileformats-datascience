@@ -16,7 +16,6 @@ class Vtk(WithMagicVersion, RasterImage):
         "application/x-vtk-binary",
     )
 
-    @property
     def header_info(self) -> ty.Tuple[bytes, str]:
         """Return the header of the VTK file and its format.
 
