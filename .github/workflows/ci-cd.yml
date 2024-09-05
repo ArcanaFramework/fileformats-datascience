@@ -16,7 +16,7 @@ jobs:
   test:
     strategy:
       matrix:
-        os: [macos-latest]  # , ubuntu-22.04
+        os: [ubuntu-22.04]
         python-version: ["3.8", "3.12"]
       fail-fast: false
     runs-on: ${{ matrix.os }}
@@ -40,12 +40,8 @@ jobs:
         auto-activate-base: true
         activate-environment: ""
     - name: Install R via Conda
-      run: |
-        conda install -c conda-forge r-base
-    - name: Set up Python ${{ matrix.python-version }} on ${{ matrix.os }}
-      uses: actions/setup-python@v2
-      with:
-        python-version: ${{ matrix.python-version }}
+      run: >-
+        conda install -c conda-forge r-base r-essentials rpy2 python=${{ matrix.python-version }}
     - name: Update build tools
       run: python3 -m pip install --upgrade pip
     - name: Install Package
