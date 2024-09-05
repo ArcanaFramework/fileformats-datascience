@@ -41,7 +41,7 @@ jobs:
         activate-environment: ""
     - name: Install R via Conda
       run: >-
-        conda install -c conda-forge r-base r-essentials r2py python=${{ matrix.python-version }}
+        conda install -c conda-forge r-base r-essentials rpy2 python=${{ matrix.python-version }}
     - name: Update build tools
       run: python3 -m pip install --upgrade pip
     - name: Install Package
