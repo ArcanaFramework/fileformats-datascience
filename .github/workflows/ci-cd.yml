@@ -40,9 +40,8 @@ jobs:
         auto-activate-base: true
         activate-environment: ""
     - name: Install R via Conda
-      run: >
-        conda install -c
-          conda-forge
+      run: >-
+        conda install -c conda-forge
           r-base
           rpy2-env
           r-essentials
