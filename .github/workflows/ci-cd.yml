@@ -23,6 +23,8 @@ jobs:
     defaults:
       run:
         shell: bash -l {0}
+    env:
+      PIP_BREAK_SYSTEM_PACKAGES: 1
     steps:
     - name: Checkout
       uses: actions/checkout@v2
