@@ -1,11 +1,10 @@
-from fileformats.generic import File
+from fileformats.generic import BinaryFile
 from fileformats.core.mixin import WithMagicNumber
 from fileformats.application import Gzip
 
 
-class ObjectSerialisation(File):
-    iana_mime = None
-    binary = True
+class ObjectSerialisation(BinaryFile):
+    ...
 
 
 class Pickle(WithMagicNumber, ObjectSerialisation):
