@@ -1,6 +1,7 @@
 import os
 import logging
 from pathlib import Path
+import typing as ty
 import tempfile
 import pytest
 
@@ -23,15 +24,16 @@ logger.addHandler(sch)
 if os.getenv("_PYTEST_RAISE", "0") != "0":
 
     @pytest.hookimpl(tryfirst=True)
-    def pytest_exception_interact(call):
-        raise call.excinfo.value
+    def pytest_exception_interact(call: pytest.CallInfo[ty.Any]) -> None:
+        if call.excinfo is not None:
+            raise call.excinfo.value
 
     @pytest.hookimpl(tryfirst=True)
-    def pytest_internalerror(excinfo):
+    def pytest_internalerror(excinfo: pytest.ExceptionInfo[BaseException]) -> None:
         raise excinfo.value
 
 
 @pytest.fixture
-def work_dir():
+def work_dir() -> Path:
     work_dir = tempfile.mkdtemp()
     return Path(work_dir)

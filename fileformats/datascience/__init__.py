@@ -4,12 +4,22 @@ from .data import (
     MatFile,
     RData,
     DatFile,
-    Hdf5,   
+    Hdf5,
 )
-from .scripts import (
-    RFile
-)
+from .scripts import RFile
 from .object_serialization import (
     Pickle,
     Pickle__Gzip,
 )
+
+__all__ = [
+    "__version__",
+    "TextMatrix",
+    "MatFile",
+    "RData",
+    "DatFile",
+    "Hdf5",
+    "RFile",
+    "Pickle",
+    "Pickle__Gzip",
+]
