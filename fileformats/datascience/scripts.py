@@ -9,3 +9,9 @@ class RFile(Script):
     """R statistical package script file"""
 
     ext = ".r"
+
+
+class IPythonNotebook(Script):
+    """Jupyter notebook"""
+
+    ext = ".ipynb"
