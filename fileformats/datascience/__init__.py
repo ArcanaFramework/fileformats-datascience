@@ -6,7 +6,7 @@ from .data import (
     DatFile,
     Hdf5,
 )
-from .scripts import RFile
+from .scripts import RFile, IPythonNotebook
 from .object_serialization import (
     Pickle,
     Pickle__Gzip,
@@ -20,6 +20,7 @@ __all__ = [
     "DatFile",
     "Hdf5",
     "RFile",
+    "IPythonNotebook",
     "Pickle",
     "Pickle__Gzip",
 ]
